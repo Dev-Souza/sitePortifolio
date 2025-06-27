@@ -38,19 +38,15 @@ const About = () => {
   return (
     <>
       <motion.div className='mt-10' variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Introdução</p>
+        <h2 className={styles.sectionHeadText}>Sobre mim.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Sou um desenvolvedor full stack apaixonado por tecnologia e por transformar ideias em soluções digitais. Tenho experiência prática em back-end com Java, Spring Boot, PostgreSQL, MongoDB, JS, Node e no front-end com React, Angular e ferramentas modernas de interface. Já desenvolvi sistemas completos com funcionalidades como autenticação, dashboards interativos com gráficos, gerenciamento de usuários e produtos, entre outros.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
