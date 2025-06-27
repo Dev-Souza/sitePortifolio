@@ -13,6 +13,7 @@ const Contact = () => {
     message: "",
   });
 
+  const emailUrl = import.meta.env.VITE_URL_EMAIL;
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -30,7 +31,7 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData(formRef.current);
-    const res = await fetch("https://formspree.io/f/xkgbknwy", {
+    const res = await fetch(emailUrl, {
       method: "POST",
       body: formData,
       headers: {
